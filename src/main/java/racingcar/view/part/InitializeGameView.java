@@ -14,5 +14,7 @@ public record InitializeGameView(InputView inputView, EventListener eventListene
 
         eventListener.listenWithParameter(InitializeTrackCountEvent::new)
                 .accept(inputView.readTrackCount());
+
+
     }
 }
