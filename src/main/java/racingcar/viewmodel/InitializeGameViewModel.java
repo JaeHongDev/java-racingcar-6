@@ -1,4 +1,4 @@
-package racingcar.view.part;
+package racingcar.viewmodel;
 
 import racingcar.event.EventListener;
 import racingcar.event.part.InitializeParticipantsEvent;
@@ -6,7 +6,7 @@ import racingcar.event.part.InitializeTrackSizeEvent;
 import racingcar.view.core.InputView;
 import racingcar.view.core.ViewModel;
 
-public record InitializeGameView(InputView inputView, EventListener eventListener) implements ViewModel {
+public record InitializeGameViewModel(InputView inputView, EventListener eventListener) implements ViewModel {
 
     @Override
     public void execute() {
